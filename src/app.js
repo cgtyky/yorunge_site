@@ -17,6 +17,18 @@ app.get("", (req, res) => {
   res.render("index");
 });
 
+app.get("/projeler", (req, res) => {
+  res.render("projeler");
+});
+
+app.get("/hakkimizda", (req, res) => {
+  res.render("hakkimizda");
+});
+
+app.get("/iletisim", (req, res) => {
+  res.render("iletisim");
+});
+
 app.listen(3000, () => {
   console.log("Server is up on port 3000");
 });
