@@ -9,34 +9,30 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
 <title>Yörünge Yer Bilimleri</title>
 </head>
-<body class="overflow-x-hidden w-screen h-screen">
+<body class="w-screen h-screen overflow-x-hidden p-0 m-0">
 {{>header}}
 {{!-- Carousel Starts HERE --}}
-<div class="siema">
-  <div>
-    <img src="img/slide1.jpg" alt="">
-  </div>
-  <div>
-    <img src="img/slide2.jpg" alt="" />
-  </div>
-  <div>
-    <img src="img/slide3.jpg" alt="" />
-  </div>
-  <div>
-    <img src="img/slide1.jpg" alt="" />
+<!-- Slider main container -->
+<div class="swiper w-screen h-screen ">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="img/slide2.jpg" alt="" srcset="" />
+    </div>
+    <div class="swiper-slide">
+      <img src="img/slide3.jpg" alt="" srcset="" />
+    </div>
+    ...
   </div>
 </div>
-<script src="js/siema.min.js"></script>
-<script>
-  new Siema({
-    loop: true,
-    duration: 100,
-    draggable: true,
-  });
-</script>
   <div
   class="bg-gray-200 absolute z-30 h-1/6 w-2/5 right-0 bottom-0 items-center justify-center flex"
 >
@@ -47,7 +43,7 @@
   <p class="text-sm text-black absolute bottom-4 left-20">
   Tüm hakları saklıdır.
   </p>
-</div>
+
 {{! Carousel Ends HERE }}
 {{!-- Hizmetlerimiz Starts Here --}}
 <div class="relative w-full h-full bg-gray-200">
@@ -156,7 +152,9 @@
 
 {{!-- Kisaca Biz Ends Here --}}
 {{>footer}}
-<script src="/js/menu.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="js/splide_l.js"></script>
+<script src="js/menu.js"></script>
 
 </body>
 

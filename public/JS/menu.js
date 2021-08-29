@@ -37,9 +37,3 @@ function checkVisible(elm) {
   );
   return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
 }
-
-var targetToAnimate = document.getElementById("animateText");
-
-window.onscroll = function () {
-  targetToAnimate.classList.toggle("-bottom-24");
-};
